@@ -3,6 +3,7 @@ function Table(scene) {
     let material = new THREE.MeshBasicMaterial( {color: 0x8CE9FF} );
     let table = new THREE.Mesh( geometry, material );
     table.position.set(5, 5, -50);
+    table.rotation.x += 0.4;
     scene.add( table );
 
 

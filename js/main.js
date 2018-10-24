@@ -4,9 +4,9 @@
 // starts the rendering loop
 
 const canvas = document.getElementById('canvas');
-
-
 const sceneManager = new SceneManager(canvas);
+
+resizeCanvas();
 
 bindEventListeners();
 render();
@@ -23,10 +23,11 @@ function resizeCanvas() {
     canvas.style.width = '100%';
     canvas.style.height = '100%';
 
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
     sceneManager.onWindowResize();
+
 }
 
 function render() {
