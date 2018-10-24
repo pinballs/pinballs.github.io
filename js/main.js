@@ -15,7 +15,7 @@ function bindEventListeners() {
     //window.onresize = resizeCanvas;
 
    // resizeCanvas();
-    window.onmousemove = sceneManager.onMouseMove;
+   // window.onmousemove = sceneManager.onMouseMove;
 
 }
 
